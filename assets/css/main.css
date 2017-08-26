@@ -1,0 +1,321 @@
+/*Clases reutilizables*/
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+
+/*// texto */
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+
+/*
+ * CONTENEDOR MAESTRO
+ */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+
+/*
+ * Comienzan las clases
+ * Grid Style
+ */
+
+[class*="col-"] {
+    min-height: 7px;
+    padding: 12px;
+    float: left;
+}
+
+
+/*
+   * Modificando el tamaño de las columnas
+   */
+
+.col-1 {
+    /*
+      * (1/12)100 FORMULA
+      */
+    width: 8.333%;
+}
+
+.col-2 {
+    /*
+      * (2/12)100 FORMULA
+      */
+    width: 16.666%;
+}
+
+.col-3 {
+    /*
+      * (3/12)100 FORMULA
+      */
+    width: 25%;
+}
+
+.col-4 {
+    /*
+      * (4/12)100 FORMULA
+      */
+    width: 33.333%;
+}
+
+.col-5 {
+    /*
+      * (5/12)100 FORMULA
+      */
+    width: 41.667%;
+}
+
+.col-6 {
+    /*
+      * (6/12)100 FORMULA
+      */
+    width: 50%;
+}
+
+.col-7 {
+    /*
+      * (7/12)100 FORMULA
+      */
+    width: 58.333%;
+}
+
+.col-8 {
+    /*
+      * (8/12)100 FORMULA
+      */
+    width: 66.667%;
+}
+
+.col-9 {
+    /*
+      * (9/12)100 FORMULA
+      */
+    width: 75%;
+}
+
+.col-10 {
+    /*
+      * (10/12)100 FORMULA
+      */
+    width: 83.333%;
+}
+
+.col-11 {
+    /*
+      * (11/12)100 FORMULA
+      */
+    width: 91.667%;
+}
+
+.col-12 {
+    /*
+      * (12/12)100 FORMULA
+      */
+    width: 100%;
+}
+
+
+/* hasta aquí código reutilizable/////////////*/
+
+
+/*
+ *  Proyecto 
+ */
+
+
+/*// selector universal para todo el proyecto*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*// seudos elementos del selector universal*/
+
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*// body*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.71429;
+    background-color: #fff;
+}
+
+
+/*// etiqueta imagen del logo (triangulito que aparece en la parte superior derecha de la pantalla*/
+
+img {
+    vertical-align: middle;
+}
+
+
+/*// a la clase logo le asigno un tamaño*/
+
+
+/*luego será ubicada con la col-7*/
+
+.logo {
+    width: 70px;
+    float: right;
+}
+
+
+/*// estilos de las referencias de los enlaces web*/
+
+a {
+    color: #373B47;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E95853;
+}
+
+
+/*// clase link*/
+
+.link {
+    font-weight: 700;
+    padding: 21px;
+}
+
+header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top 0;
+}
+
+
+/*// falta descrifrar esto*/
+
+.menu {
+    padding: 200px 70px;
+    overflow: auto;
+}
+
+
+/* SEGUNDA SECCION */
+
+#home {
+    background-image: url(../images/bg-home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 554px;
+    text-align: center;
+}
+
+#home .container {
+    color: white;
+    padding: 70px;
+}
+
+.text-home {
+    font-size: 53px;
+}
+
+
+/*// botón*/
+
+.btn-home {
+    background: #2ECC71;
+    color: #fff;
+    padding: 11px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.comodin {
+    height: 80px;
+}
+
+
+/*// Sección SERVICES*/
+
+#services {
+    background-color: #F17C72;
+    text-align: center;
+    color: #fff;
+    padding: 40px 40px;
+}
+
+.text-services {
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.box-services {
+    width: 30%;
+    /*display: inline-block;*/
+}
+
+#imagenes {
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 554px;
+    text-align: center;
+}
+
+#compu {
+    position: relative;
+    left: 08px;
+    top: 50px;
+    height: 200%;
+}
+
+
+/*// my footer*/
+
+#copyright {
+    text-align: center;
+    color: white;
+    background:black;
+    letter-spacing: 2px;
+    background-size: cover;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;  
+}
