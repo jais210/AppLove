@@ -303,8 +303,39 @@ header {
     top: 50px;
     height: 200%;
 }
-
-
+/* posicionamiento de imágenes */
+.modal{
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(18, 102, 224, 0.3);
+    top: 0;
+    left:0;
+    text-align: center;
+  }
+  
+  .modal_img{
+    position: relative;
+    width: 20%;
+    height: 20vh;
+    margin: 20px;
+    text-align: center;
+    border-radius: 5%;
+    }
+  
+  .boton{
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    background: transparent;
+    position: absolute;
+    z-index: 100;
+    right: 270px;
+    top: 20px;
+    font-size: 35px;
+    cursor: pointer;
+  }
 /*// my footer*/
 
 #copyright {
